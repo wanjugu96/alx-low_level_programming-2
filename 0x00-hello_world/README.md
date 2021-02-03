@@ -9,7 +9,7 @@
 <li>GCC</li>
 <li>Puts()</li>
 <li>Data types (char, int, long, short, uint, float...)</li>
-<li>Write</li>
-<li>Putchar</li>
+<li>Write()</li>
+<li>Putchar()</li>
 <li>Linker</li>
 </ul>
