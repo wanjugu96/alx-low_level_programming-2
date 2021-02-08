@@ -1,21 +1,18 @@
 #include "holberton.h"
 
 /**
- *print_alphabet- use only user defined variables to create output
- *
- *Return: print to stdout the alphabet, in lowercase, followed by a new line.
+ * print_alphabet - order from a to z
+ * Return: alphab
  */
 void print_alphabet(void)
 {
-	char c;
+	char alphab;
 
-	c = 'a';
-
-	while (c <= 'z')
+	alphab = 'a';
+	while (alphab <= 'z')
 	{
-		_putchar(c);
-		c++;
+		_putchar(alphab);
+		alphab++;
 	}
 	_putchar('\n');
-
 }
