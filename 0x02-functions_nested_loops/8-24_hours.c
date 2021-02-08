@@ -4,7 +4,7 @@ int _putchar(char c);
 
 /**
  * jack_bauer - display 24 hours
- * Return: 24 hours
+ * Return: every minute of day (00:00 - 23:59)
  */
 void jack_bauer(void)
 {
