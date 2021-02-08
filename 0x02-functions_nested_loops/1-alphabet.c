@@ -1,5 +1,9 @@
 #include "holberton.h"
 
+/**
+ * print_alphabet - order from a to z
+ * Return: lower
+ */
 void print_alphabet(void)
 {
 	char lower;
