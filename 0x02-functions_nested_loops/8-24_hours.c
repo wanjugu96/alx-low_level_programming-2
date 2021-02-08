@@ -8,10 +8,9 @@ int _putchar(char c);
  */
 void jack_bauer(void)
 {
-	int hour;
+	int hour = 0;
 	int min;
 
-	hour = 0;
 	while (hour <= 23)
 	{
 		min = 0;
