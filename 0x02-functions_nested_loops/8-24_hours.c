@@ -8,23 +8,23 @@ int _putchar(char c);
  */
 void jack_bauer(void)
 {
-	int x;
-	int y;
+	int hour;
+	int min;
 
-	x = 0;
-	while (x <= 23)
+	hour = 0;
+	while (hour <= 23)
 	{
-		y = 0;
-		while (y <= 59)
+		min = 0;
+		while (min <= 59)
 		{
-			_putchar(x / 10 + '0');
-			_putchar(x % 10 + '0');
+			_putchar(hour / 10 + '0');
+			_putchar(hour % 10 + '0');
 			_putchar(':');
-			_putchar(y / 10 + '0');
-			_putchar(y % 10 + '0');
+			_putchar(min / 10 + '0');
+			_putchar(min % 10 + '0');
 			_putchar('\n');
-			y++;
+			min++;
 		}
-		x++;
+		hour++;
 	}
 }
