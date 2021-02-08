@@ -1,10 +1,9 @@
 #include "holberton.h"
 /**
- * times_table - create a table of multiplication facts
+ * times_table - create multiplication table
  *
- * Return: print to stdout the 9 times table, starting with 0.
+ * Return: output print the 9 times table
  */
-int _putchar(char c);
 
 void times_table(void)
 {
@@ -15,7 +14,7 @@ void times_table(void)
 	{
 		n = 0;
 		_putchar('0');
-		for (n = 0; n<= 9; n++)
+		for (n = 0; n <= 9; n++)
 		{
 			if ((m * n) <= 9)
 			{
