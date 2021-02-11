@@ -1,15 +1,13 @@
 #include "holberton.h"
 
 /**
- * print_diagonal - Bresenham's algorithm
+ * print_diagonal - Bresenham's algo
  * @n: int check
- * Return: diagonal line
+ * Return: '\'
  */
-
 void print_diagonal(int n)
 {
-	int x;
-	int y = 0;
+	int i, y;
 
 	if (n <= 0)
 	{
@@ -17,13 +15,14 @@ void print_diagonal(int n)
 	}
 	else
 	{
-		while (y < n);
+		y = 0;
+		while (y < n)
 		{
-			for (x = 0; x <= y; x++)
+			for (i = 0; i <= y; i++)
 			{
-				if (x > 0)
+				if (i > 0)
 					_putchar(' ');
-				if (x == y)
+				if (i == y)
 					_putchar('\\');
 			}
 			_putchar('\n');
