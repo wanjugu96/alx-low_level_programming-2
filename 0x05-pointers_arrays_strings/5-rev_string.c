@@ -30,6 +30,7 @@ void rev_string(char *s)
 		tmp = *end;
 		*end = *begin;
 		*begin = tmp;
+		/* increment begin and decrement end */
 		begin++;
 		end--;
 	}
