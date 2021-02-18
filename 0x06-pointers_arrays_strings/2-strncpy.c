@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _strncopy - copy string to dest in n length
+ * *_strncpy - copy string to dest in n length
  * @dest: string to return
  * @src:  '' '' copy
  * @n: size to copy
@@ -19,7 +19,7 @@ char *_strncpy(char *dest, char *src, int n)
 		*ptr = src[y];
 		ptr++;
 	}
-	for (;y < n; y++)
+	for (; y < n; y++)
 	{
 		*ptr = '\0';
 		ptr++;
