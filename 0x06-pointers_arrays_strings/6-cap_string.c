@@ -1,31 +1,27 @@
 #include "holberton.h"
-
 /**
- * *cap_string - capitalize first letter of word
+ * *cap_string - capitalize first letters of word
  * @s: string
- *
- * Description: This function capitalizes all words of a string.
- *
- * Return: uppercase words of string.
+ * Return: uppercase word in string
  */
-
 char *cap_string(char *s)
 {
-	int i, j;
-	char *signs = ", \t\n.;?\"(){}";
+	int i;
 
-	for (i = 0; *(s + i); i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; signs[j]; j++)
+		if (s[i] >= 97 && s[i] <= 122)
 		{
-			if (*(s + i) == signs[j])
-				if (((*(s + (i + 1))) >= 'a' && (*(s + (i + 1))) <= 'z'))
-					*(s + (i + 1)) = *(s + (i + 1)) - 32;
-		}
-		if (i == 0)
-		{
-			if (*(s + i) >= 'a' && *(s + i) <= 'z')
-				*(s + i) = *(s + i) - 32;
+			if (s[i - 1] == '\t' || s[i - 1] == ' ' || s[i - 1] == '\n')
+				s[i] -= 32;
+			else if (s[i - 1] == ',')
+				s[i] -= 32;
+			else if (s[i - 1] == ';' || s[i - 1] == '.' || s[i - 1] == '!')
+				s[i] -= 32;
+			else if (s[i - 1] == '?' || s[i - 1] == '"' || s[i - 1] == '(')
+				s[i] -= 32;
+			else if (s[i - 1] == ')' || s[i - 1] == '{' || s[i - 1] == '}')
+				s[i] -= 32;
 		}
 	}
 	return (s);
