@@ -12,7 +12,7 @@ char *cap_string(char *s)
 	{
 		if (s[i] >= 97 && s[i] <= 122)
 		{
-			if (s[i - 1] == '\t' || s[i - 1] == ' ' || s[i - 1] == '\n')
+			if (s[i - 1] == ' ' || s[i - 1] == '\t' || s[i - 1] == '\n')
 				s[i] -= 32;
 			else if (s[i - 1] == ',')
 				s[i] -= 32;
