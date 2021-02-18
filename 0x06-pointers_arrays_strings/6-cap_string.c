@@ -1,11 +1,9 @@
 #include "holberton.h"
-
 /**
  * *cap_string - capitalize first letters of word
  * @s: string
  * Return: uppercase word in string
  */
-
 char *cap_string(char *s)
 {
     int i;
