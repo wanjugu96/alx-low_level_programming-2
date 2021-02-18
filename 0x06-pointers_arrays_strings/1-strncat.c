@@ -1,9 +1,10 @@
 #include "holberton.h"
 
 /**
- * _strcat - append src to dest
+ * _strncat - append src to dest
  * @dest: return
  * @src: append
+ * @n: size to copy
  * Return: dest
  */
 
