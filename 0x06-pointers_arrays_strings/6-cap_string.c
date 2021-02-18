@@ -3,7 +3,7 @@
 /**
  * *cap_string - capitalize first letters of word
  * @s: string
- * Return: uppercase word in string
+ * Return: uppercase word
  */
 
 char *cap_string(char *s)
@@ -15,15 +15,15 @@ char *cap_string(char *s)
 		if (s[i] >= 'a' && s[i] <= 'z')
 		{
 			if (s[i - 1] == '\t' || s[i - 1] == ' ' || s[i - 1] == '\n')
-				s[i] -= 32;
+				s[i] = s[i] - 32;
 			else if (s[i - 1] == ',')
-				s[i] -= 32;
+				s[i] = s[i] - 32;
 			else if (s[i - 1] == ';' || s[i - 1] == '.' || s[i - 1] == '!')
-				s[i] -= 32;
+				s[i] = s[i] - 32;
 			else if (s[i - 1] == '?' || s[i - 1] == '"' || s[i - 1] == '(')
-				s[i] -= 32;
+				s[i] = s[i] - 32;
 			else if (s[i - 1] == ')' || s[i - 1] == '{' || s[i - 1] == '}')
-				s[i] -= 32;
+				s[i] = s[i] - 32;
 		}
 	}
 	return (s);
