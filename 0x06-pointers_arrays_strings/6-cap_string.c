@@ -6,9 +6,9 @@
  */
 char *cap_string(char *s)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[i] != '\0')
 	{
 		if (s[i] >= 97 && s[i] <= 122)
 		{
@@ -23,6 +23,7 @@ char *cap_string(char *s)
 			else if (s[i - 1] == ')' || s[i - 1] == '{' || s[i - 1] == '}')
 				s[i] -= 32;
 		}
+		i++;
 	}
 	return (s);
 }
