@@ -2,7 +2,7 @@
 
 /**
  * *cap_string - capitalize first letters of word
- * @c: string
+ * @s: string
  * Return: uppercase word in string
  */
 
