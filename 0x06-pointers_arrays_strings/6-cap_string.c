@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * *cap_string - convert lower to upper, first letter of a word
+ * *cap_string - capitalize first letter of word
  * @s: string
- * Return: uppercase word string
+ * Return: uppercase word in string
  */
 char *cap_string(char *s)
 {
@@ -10,18 +10,18 @@ char *cap_string(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] >= 'a' && s[i] <= 'z')
+		if (s[i] >= 97  && s[i] <= 122)
 		{
 			if (s[i - 1] == '\t' || s[i - 1] == ' ' || s[i - 1] == '\n')
-				s[i] = s[i] - 32;
+				s[i] -= 32;
 			else if (s[i - 1] == ',')
-				s[i] = s[i] - 32;
+				s[i] -= 32;
 			else if (s[i - 1] == ';' || s[i - 1] == '.' || s[i - 1] == '!')
-				s[i] = s[i] - 32;
+				s[i] -= 32;
 			else if (s[i - 1] == '?' || s[i - 1] == '"' || s[i - 1] == '(')
-				s[i] = s[i] - 32;
+				s[i] -= 32;
 			else if (s[i - 1] == ')' || s[i - 1] == '{' || s[i - 1] == '}')
-				s[i] = s[i] - 32;
+				s[i] -= 32;
 		}
 	}
 	return (s);
