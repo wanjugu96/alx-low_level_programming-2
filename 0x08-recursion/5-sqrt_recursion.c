@@ -1,19 +1,25 @@
 #include "holberton.h"
 
-/**
- * sqrt_check - checks for the square root of c
- * @g:guess at sqrt
- * @c: number to find sqrt of
- *
- * Return: -1 or sqrt of c
- */
-int sqrt_check(int g, int c)
+ /**
+  * sqrt_check - checks for the square root of c
+  * @guess at sqrt
+  * @num: number to find sqrt of
+  *
+  * Return: -1 or sqrt of c
+  */
+
+int _sqrt(guess, num)
 {
-	if (g * g == c)
-		return (g);
-	if (g * g > c)
-		return (-1);
-	return (sqrt_check(g + 1, c));
+
+    if (guess * guess == num)
+    {
+        return guess;
+    }
+    else if (guess * guess > num)
+    {
+        return (-1);
+    }
+    return (_sqrt(guess + 1, num));
 }
 
 /**
@@ -24,7 +30,7 @@ int sqrt_check(int g, int c)
  */
 int _sqrt_recursion(int n)
 {
-	if (n == 0)
-		return (0);
-	return (sqrt_check(1, n));
+    if (n == 0)
+        return (0);
+    return (_sqrt(1, n));
 }
